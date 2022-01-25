@@ -1,9 +1,17 @@
-# maintenance admin allert_OC3
+# maintenance admin allert for OC3
 
-Alert in admin area if store is in maintenace mode.
+Alert message in admin area if store is in maintenace mode.
 
 Instal:
-- Install OC mod
-- Refresh modification
+
+Manualy upload
+maintenance-mode-warning.ocmod.xml 
+into system folder.
+
+Or use Ocmod installer instead of
+
+Refresh modification & rebulid Theme & SASS
+
+
 
 
