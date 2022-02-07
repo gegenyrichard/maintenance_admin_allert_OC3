@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <modification>
   <generator>Created with https://weblenti.com</generator>
-  <name>Admin maintencae mode warnig message</name>
+  <name>Admin maintencae mode warnig message OC 3-2 Version</name>
   <version>1.0</version>
   <code>AMMWM</code>
   <author>Richard G.</author>
@@ -15,11 +15,26 @@
 	<div class="alert alert-danger text-center" role="alert">
 		<h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;MAINTENACE MODE ACTIVE!&nbsp;<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
 	</div>
-{% endif %}]]></add>
+{% endif %}
+]]></add>
     </operation>
 
   </file>
 
+    <file path="admin/view/template/common/header.tpl">
+    <operation>
+      <search trim="false"><![CDATA[<div id="container">]]></search>
+      <add position="before" trim="false"><![CDATA[
+<?php if($in_maintenance == 1){ ?>
+	<div class="alert alert-danger text-center" role="alert">
+		<h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;MAINTENACE MODE ACTIVE!&nbsp;<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
+	</div>
+<?php } ?>
+]]></add>
+    </operation>
+
+  </file>
+  
   <file path="admin/controller/common/header.php">
     <operation>
       <search trim="false"><![CDATA[return $this->load->view('common/header', $data);]]></search>
