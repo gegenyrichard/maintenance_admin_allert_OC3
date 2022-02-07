@@ -1,4 +1,4 @@
-# maintenance admin allert for OC3
+# maintenance admin allert for OC3 & OC2
 
 Alert message in admin area if store is in maintenace mode.
 
